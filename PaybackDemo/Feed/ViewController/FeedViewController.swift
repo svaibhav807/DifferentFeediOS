@@ -41,6 +41,7 @@ class FeedViewController: UIViewController, UITextFieldDelegate {
         self.title = "Payback Feed"
         let edgeInsets = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
         feedTableView.fillInSafeArea(of: view, with: edgeInsets)
+        feedTableView.translatesAutoresizingMaskIntoConstraints = false
         feedTableView.backgroundColor = PaybackColors.Background.primary
         self.view.backgroundColor = PaybackColors.Background.primary
         refreshControl.tintColor = .label
